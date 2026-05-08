@@ -3,7 +3,7 @@
 
 declare const Deno: any;
 
-const PSK = "123M@ryam456";
+const PSK = Deno.env.get("PSK");
 
 const STRIP_HEADERS = new Set([
   "host",
